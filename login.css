@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+  font-family: "Spline Sans", sans-serif;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background: #fff;
+}
+
+.title {
+  position: absolute;
+  top: 35px;
+  left: 20px;
+  font-size: 50px;
+}
+
+form {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 150px 150px;
+  width: 100%;
+  height: 425px;
+}
+
+form div {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form div h2 {
+  font-size: 40px;
+  margin: 15px 0px;
+}
+
+form div input {
+  font-size: 34px;
+  width: 200px;
+  height: 50px;
+}
+
+.agreeBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  height: 100px;
+  width: 100%;
+}
+
+.agreeBox input {
+  width: 35px;
+  height: 35px;
+  margin: 20px;
+}
+
+.agreeBox p {
+  font-size: 35px;
+}
+
+button,
+input {
+  cursor: pointer;
+}
+
+button {
+  color: #fff;
+  background: blue;
+  outline: none;
+  border: none;
+  font-size: 30px;
+  width: 150px;
+  height: 50px;
+  transition: 0.5s;
+}
+
+button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+button:hover,
+button:active {
+  background: rgb(19, 19, 131);
+}
+
+@media screen and (min-width: 300px) and (max-width: 800px) {
+  form {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 150px;
+    width: 100vw;
+    height: 315px;
+  }
+
+  form div h2 {
+    font-size: 29px;
+    margin: 0px 0px;
+  }
+
+  form div input {
+    font-size: 34px;
+    width: 120px;
+    height: 50px;
+  }
+
+  .agreeBox {
+    margin-top: 50px;
+  }
+
+  .agreeBox input {
+    width: 45px;
+    height: 45px;
+  }
+
+  .agreeBox p {
+    font-size: 25px;
+  }
+}
